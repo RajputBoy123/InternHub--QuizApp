@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="icon.png" alt="Quiz Mania Logo">
+    </div>
+    <h1>Quiz Time!</h1>
+    <a href="#start" class="cta">Start Quiz</a>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Display the selected domain -->
+      <h2 id="quiz-domain"></h2>
+
+      <!-- Placeholder for questions and options -->
+      <div id="quiz-container" class="quiz-box"></div>
+
+      <div class="nav-buttons">
+        <button id="next-btn" class="btn" onclick="nextQuestion()" style="display: none;">Next</button>
+        <button id="submit-btn" class="btn" onclick="submitQuiz()" style="display: none;">Submit</button>
+      </div>
+      
+      <p id="score" style="display: none;"></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Quiz Mania. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+body {
+    font-family: "Dosis", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in;
+}
+  
+header {
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+header .logo:hover {
+    transform: scale(1.1) rotate(1deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+  
+header .logo img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+  
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+}
+  
+header .cta {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+}
+  
+header .cta:hover {
+    transform: scale(1.1);
+}
+  
+main {
+    flex: 1;
+    padding: 20px;
+}
+  
+.container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+.quiz-box {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+}
+  
+.quiz-box h3 {
+    margin-top: 0;
+}
+  
+.options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f7f7f7;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+  
+.options button:hover, .options button.selected {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.options button.selected {
+    background-color: #111c28;
+    color: white;
+}
+  
+.options button:disabled {
+    cursor: not-allowed;
+    background-color: #cccccc;
+    color: #666666;
+}
+  
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+  
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0 10px;
+}
+  
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+  
+.footer {
+    background: #0f0f0f; 
+    color: #666;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+  
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+  
+.footer-links a {
+    color: #007BFF; 
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+  
+.footer-links a:hover {
+    color: #0056b3;
+}
+  
+.footer-social {
+    margin-top: 10px;
+}
+  
+.footer-social a {
+    color: #FFD700;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 22px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+  
+.footer-social a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+  
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+  
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
